@@ -1,0 +1,33 @@
+{
+	"pages": [
+		"pages/index/index"
+	],
+	"window": {
+		"backgroundColor": "#000000",
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#000000",
+		"navigationBarTitleText": "Yofer",
+		"navigationBarTextStyle": "white",
+		"enablePullDownRefresh": true
+	},
+	"tabBar": {
+		"color": "#666666",
+		"selectedColor": "#000000",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "images/index.png",
+				"selectedIconPath": "images/indexed.png"
+			},
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "images/index.png",
+				"selectedIconPath": "images/indexed.png"
+			}
+		]
+	},
+	"sitemapLocation": "sitemap.json",
+	"style": "v2"
+}

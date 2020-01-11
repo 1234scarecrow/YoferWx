@@ -1,0 +1,13 @@
+/* pages/index/index.wxss */
+
+text {
+  color: aqua;
+}
+
+template {
+  background-color: #000;
+}
+
+image {
+  width: 375rpx;
+}

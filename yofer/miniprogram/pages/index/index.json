@@ -1,0 +1,11 @@
+{
+  "usingComponents": {},
+	"window": {
+		"backgroundColor": "#000000",
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#000000",
+		"navigationBarTitleText": "Yofer首页",
+		"navigationBarTextStyle": "black",
+		"enablePullDownRefresh": true
+	},
+}
