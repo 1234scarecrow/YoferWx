@@ -1,2 +1,28 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<swiper autoplay="true" duration="150">
+	<swiper-item wx:for="{{swiper}}" wx:key="index">
+		<view>
+			<!-- <text>{{item.title}}</text>
+			<text>{{item.subTitle}}</text> -->
+		</view>
+		<image mode="center" src="{{item.src}}"></image>
+	</swiper-item>
+</swiper>
+<view class="items">
+	<view>
+		<image src="../../images/my0.png"></image>
+		案例
+	</view>
+	<view>
+		<image src="../../images/my0.png"></image>
+		公告
+	</view>
+	<view>
+		<image src="../../images/my0.png"></image>
+		渠道
+	</view>
+	<view>
+		<image src="../../images/my0.png"></image>
+		套件
+	</view>	
+</view>

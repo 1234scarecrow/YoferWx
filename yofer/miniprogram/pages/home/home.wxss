@@ -1,1 +1,42 @@
 /* pages/home/home.wxss */
+image{
+	width: 750rpx;
+}
+swiper{
+	width: 750rpx;
+	height: 380rpx;
+}
+swiper-item{
+	position: relative;
+}
+swiper-item>view{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	width: 400rpx;
+	color: aliceblue;
+	display: flex;
+	flex-direction: column
+}
+swiper-item text:first-child{
+	font-size: 60rpx;
+}
+.items{
+	margin-top: 30rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly
+}
+.items>view{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: rgb(192, 192, 192);
+}
+.items>view>image{
+	width: 90rpx;
+	height: 90rpx;
+	border-radius: 15rpx;
+	/* box-shadow: 5rpx 5rpx 10rpx #fff; */
+	margin-bottom: 15rpx;
+}
