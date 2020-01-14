@@ -1,13 +1,16 @@
 /* pages/home/home.wxss */
 image{
-	width: 750rpx;
+	width: 730rpx;
 }
 swiper{
 	width: 750rpx;
 	height: 380rpx;
+  padding: 10rpx;
+  overflow: hidden;
 }
 swiper-item{
 	position: relative;
+  border-radius: 15rpx;
 }
 swiper-item>view{
 	position: absolute;
@@ -25,7 +28,8 @@ swiper-item text:first-child{
 	margin-top: 30rpx;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly
+	justify-content: space-evenly;
+  font-size: 14px;
 }
 .items>view{
 	display: flex;

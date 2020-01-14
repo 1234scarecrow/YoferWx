@@ -10,19 +10,19 @@
 </swiper>
 <view class="items">
 	<view>
-		<image src="../../images/my0.png"></image>
+		<image src="../../images/item9.png"></image>
 		案例
 	</view>
 	<view>
-		<image src="../../images/my0.png"></image>
+		<image src="../../images/item8.png"></image>
 		公告
 	</view>
 	<view>
-		<image src="../../images/my0.png"></image>
+		<image src="../../images/item7.png"></image>
 		渠道
 	</view>
 	<view>
-		<image src="../../images/my0.png"></image>
+		<image src="../../images/item6.png"></image>
 		套件
 	</view>	
 </view>
