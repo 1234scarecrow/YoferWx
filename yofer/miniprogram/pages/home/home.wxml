@@ -1,28 +1,75 @@
 <!--pages/home/home.wxml-->
-<swiper autoplay="true" duration="150">
-	<swiper-item wx:for="{{swiper}}" wx:key="index">
-		<view>
-			<!-- <text>{{item.title}}</text>
-			<text>{{item.subTitle}}</text> -->
-		</view>
-		<image mode="center" src="{{item.src}}"></image>
-	</swiper-item>
+<!-- 分类 -->
+<view class="classify">
+  <text class="active">推荐</text>
+  <text>视频</text>
+  <text>Yofer</text>
+</view>
+<!-- 轮播图 -->
+<swiper autoplay="true" duration="150" indicator-dots="true" indicator-color="rgba(49, 53, 74, 0.5)" indicator-active-color="rgba(215,52,52,0.5)">
+  <swiper-item wx:for="{{swiper}}" wx:key="index">
+    <image mode="center" src="{{item.src}}"></image>
+  </swiper-item>
 </swiper>
+<!-- 主页下级入口 -->
 <view class="items">
-	<view>
-		<image src="../../images/item9.png"></image>
-		案例
-	</view>
-	<view>
-		<image src="../../images/item8.png"></image>
-		公告
-	</view>
-	<view>
-		<image src="../../images/item7.png"></image>
-		渠道
-	</view>
-	<view>
-		<image src="../../images/item6.png"></image>
-		套件
-	</view>	
+  <view>
+    <image src="../../img/cases.png" mode="aspectFit"></image>
+    <text>案例</text>
+  </view>
+  <view>
+    <image src="../../img/notice.png" mode="aspectFit"></image>
+    <text>公告</text>
+  </view>
+  <view>
+    <image src="../../img/suits.png" mode="aspectFit"></image>
+    <text>套件</text>
+  </view>
+  <view>
+    <image src="../../img/dealer.png" mode="aspectFit"></image>
+    <text>经销商</text>
+  </view>
+</view>
+<view class="items2">
+  <!-- 案例 -->
+  <view class="cases">
+    <image src="../../images/cases.jpg" mode="aspectFit"></image>
+    <view class="textbg"></view>
+    <text bindtap="toCases">案例 >></text>
+  </view>
+  <!-- 套件 -->
+  <view class="suit">
+    <image src="../../images/suits.jpg" mode="aspectFit"></image>
+    <view class="textbg"></view>
+    <text bindtap="toSuits">套件 >></text>
+  </view>
+  <!-- 经销商 -->
+  <view class="dealer">
+    <image src="../../images/dealer.jpg" mode="aspectFit"></image>
+    <view class="textbg"></view>
+    <text bindtap="toDealer">经销商 >></text>
+  </view>
+</view>
+
+<!-- 套件 -->
+<view class="suits">
+  <!-- 标题 -->
+  <text>套件</text>
+  <text>更多>></text>
+  <view class="suits_container">
+    <view wx:for="{{suits}}" wx:key="index" class="suits_item">
+      <image src="{{item.src}}"></image>
+      <text>{{item.title}}</text>
+      <text>>></text>
+    </view>
+  </view>
+</view>
+<view class="suits2">
+  <!-- 标题 -->
+  <text>套件</text>
+  <text>更多>></text>
+  <view wx:for="{{suits}}" wx:key="index" class="suits_item">
+    <image src="{{item.src}}" mode="center"></image>
+    <text>{{item.title}}</text>
+  </view>
 </view>

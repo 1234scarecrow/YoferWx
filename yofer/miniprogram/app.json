@@ -1,39 +1,35 @@
 {
 	"pages": [
     "pages/home/home",
-    "pages/message/message",
-    "pages/personalCenter/personalCenter"
+    "pages/personalCenter/personalCenter",
+    "pages/cases/cases",
+    "pages/suits/suits",
+    "pages/dealer/dealer"
 	],
 	"window": {
 		"backgroundColor": "#000000",
 		"backgroundTextStyle": "light",
-		"navigationBarBackgroundColor": "#000000",
+		"navigationBarBackgroundColor": "#ffffff",
 		"navigationBarTitleText": "Yofer",
-		"navigationBarTextStyle": "white",
+		"navigationBarTextStyle": "black",
 		"enablePullDownRefresh": true
 	},
 	"tabBar": {
-		"color": "#ececec",
-		"selectedColor": "#e7270f",
-    "backgroundColor": "#000000",
+		"color": "#31354a",
+		"selectedColor": "#31354a",
+    "backgroundColor": "#ffffff",
 		"list": [
 			{
 				"pagePath": "pages/home/home",
 				"text": "首页",
-				"iconPath": "images/home0.png",
-				"selectedIconPath": "images/home1.png"
+				"iconPath": "img/home.png",
+				"selectedIconPath": "img/s_home.png"
 			},
-      {
-        "pagePath": "pages/message/message",
-        "text": "资讯",
-        "iconPath": "images/message0.png",
-        "selectedIconPath": "images/message1.png"
-      },
 			{
 				"pagePath": "pages/personalCenter/personalCenter",
 				"text": "我",
-				"iconPath": "images/my0.png",
-				"selectedIconPath": "images/my1.png"
+				"iconPath": "img/self.png",
+				"selectedIconPath": "img/s_self.png"
 			}
 		]
 	},

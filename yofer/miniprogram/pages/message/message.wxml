@@ -1,2 +1,6 @@
 <!--pages/message/message.wxml-->
-<text>pages/message/message.wxml</text>
+
+<view class="banner">
+  <text>#尊道理合</text>
+  <image src="../../images/lynk1.jpg"></image>
+</view>

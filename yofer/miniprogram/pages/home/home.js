@@ -5,23 +5,57 @@ Page({
    * 页面的初始数据
    */
   data: {
-		swiper:[
-			{
-				title: "双十一活动",
-				subTitle: "双十一到了, 不给您的爱车来一件新衣服,换双新鞋吗?",
-				src:"../../images/swiper1.png"
-			},
-			{
-				title: "春节放假通知",
-				subTitle: "Yofer于1月14日进入春节假期, 祝大家新年快乐!",
-				src: "../../images/swiper2.png"
-			},
-			{
-				title: "宝马三系套件",
-				subTitle: "宝马三系上市, 一改市面上现有仿M3套件的千篇一律,让您的三系拥有全新外观!",
-				src: "../../images/swiper4.png"
-			}
-		]
+    swiper: [{
+        src: "../../images/ES5801.jpg"
+      },
+      {
+        src: "../../images/ES5802.jpg"
+      },
+      {
+        src: "../../images/ES5803.jpg"
+      },
+      {
+        src: "../../images/ES5804.jpg"
+      }
+    ],
+    suits: [{
+        title: "Lynk&Co 03",
+        src: "../../images/lynk1.jpg"
+      },
+      {
+        title: "Lexus ES新品",
+        src: "../../images/ES5802.jpg"
+      },
+      {
+        title: "领克03 '新衣'",
+        src: "../../images/lynk3.jpg"
+      },
+      {
+        title: "Camry",
+        src: "../../images/swiper4.jpg"
+      },
+    ]
+  },
+  /**
+   * 事件
+   */
+  toSuits: function() {
+    wx.navigateTo({
+      url: '../suits/suits', //跳转页面的路径，可带参数 ？隔开，不同参数用 & 分隔；相对路径，不需要.wxml后缀
+      success: function() {}, //成功后的回调；
+      fail: function() {}, //失败后的回调；
+      complete: function() {} //结束后的回调(成功，失败都会执行)
+    })
+  },
+  toCases:function(){
+    wx.navigateTo({
+      url: '../cases/cases'
+    })
+  },
+  toDealer:function(){
+    wx.navigateTo({
+      url: '../dealer/dealer',
+    })
   },
 
   /**
@@ -77,6 +111,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function() {
-
+    
   }
 })

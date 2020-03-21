@@ -1,0 +1,4 @@
+<!--pages/suits/suits.wxml-->
+<text>pages/suits/suits.wxml</text>
+<view>套件</view>
+<button>返回</button>

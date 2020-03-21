@@ -1,2 +1,34 @@
 <!--pages/personalCenter/personalCenter.wxml-->
-<text>pages/personalCenter/personalCenter.wxml</text>
+
+<view class="background">
+  <image src="../../images/ES5801.jpg" mode="aspectFit"></image>
+  <view></view>
+  <image src="../../img/setting.png" mode="aspectFit"></image>
+</view>
+<view class="info">
+  <!-- 头像 -->
+  <image src="../../images/hphoto.jpg" mode="aspectFit"></image>
+  <!-- id -->
+  <text>Yofer用户</text>
+  <image src="../../img/message.png"></image>
+</view>
+<view class="items">
+  <view>
+    <text>我的座驾</text>
+    <text>>></text>
+    <view>
+      <image src="../../images/swiper4.jpg" mode="aspectFit"></image>
+      <text>凯美瑞 + yofer小包围</text>
+    </view>
+  </view>
+  <view>
+    <text>我的相册</text>
+    <text>>></text>
+    <view>
+      <image src="../../images/swiper1.jpg" mode="aspectFit"></image>
+      <image src="../../images/swiper2.jpg" mode="aspectFit"></image>
+      <image src="../../images/swiper3.jpg" mode="aspectFit"></image>
+      <image src="../../images/swiper4.jpg" mode="aspectFit"></image>
+    </view>
+  </view>
+</view>

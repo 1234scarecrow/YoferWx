@@ -1,46 +1,216 @@
-/* pages/home/home.wxss */
-image{
-	width: 730rpx;
+/* 分类 */
+.classify{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 35rpx;
+  margin: 20rpx 0;
+  color: #31354a;
 }
+.active{
+  color: #282e49;
+  font-size: 40rpx;
+  border-bottom: 5rpx solid rgba(215,52,52,0.75);
+}
+
+/* banner轮播图 */
 swiper{
-	width: 750rpx;
-	height: 380rpx;
-  padding: 10rpx;
-  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0 30rpx 30rpx 30rpx;
+  width: 750rpx;
+  height: 380rpx;
 }
-swiper-item{
-	position: relative;
+/* swiper-item{
   border-radius: 15rpx;
+  box-shadow: 0 0 5px #31354a;
+} */
+swiper image{
+  display: block;
+  width: 690rpx;
+  height: 350rpx;
+  border-radius: 30rpx;
 }
-swiper-item>view{
-	position: absolute;
-	left: 20px;
-	top: 20px;
-	width: 400rpx;
-	color: aliceblue;
-	display: flex;
-	flex-direction: column
-}
-swiper-item text:first-child{
-	font-size: 60rpx;
-}
+
+/* 案例 / 套件 / 经销商 1111111*/
 .items{
-	margin-top: 30rpx;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-  font-size: 14px;
+  display: flex;
+  justify-content: space-evenly;
+  display: none;
 }
 .items>view{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	color: rgb(192, 192, 192);
+  width: 20%;
+  height: 150rpx;
+  /* border: 1rpx solid #000000; */
+  text-align: center;
 }
 .items>view>image{
-	width: 90rpx;
-	height: 90rpx;
-	border-radius: 15rpx;
-	/* box-shadow: 5rpx 5rpx 10rpx #fff; */
-	margin-bottom: 15rpx;
+  width: 60%;
+  height: 80rpx;
+  display: block;
+  padding: 15rpx;
+  margin: 0 auto 20rpx;
+  border-radius: 25rpx;
+  box-shadow: 0 0 5px #44464e;
+}
+.items>view>text{
+  color: #31354a;
+  font-weight: normal;
+  font-family: "微软雅黑";
+}
+
+/* 案例 / 套件 / 经销商 222222 */
+.items2{
+  width: 690rpx;
+  margin: 0 auto;
+  position: relative;
+  height: 260rpx;
+}
+.items2>.cases,.items2>.suit,.items2>.dealer{
+  border-radius: 6px;
+  box-shadow: 0 0 5rpx rgba(49, 53, 74, 0.3);
+  position: absolute;
+  overflow: hidden;
+}
+.items2>.cases{
+  width: 48%;
+  height: 260rpx;
+  top: 0;
+  left: 0;
+}
+.items2>.suit,.items2>.dealer{
+  width: 50%;
+  height: 120rpx;
+  right: 0;
+}
+.items2>.dealer{
+  bottom: 0
+}
+.cases image{
+  margin: 0;
+  width: 175%;
+  position: absolute;
+  top: -100rpx;
+  left: -80rpx;
+  z-index: -1;
+}
+.cases text{
+  position: absolute;
+  left: 15rpx;
+  top: 195rpx;
+  color: #e7e7e9;
+  font-weight: bold;
+}
+.suit image{
+  margin: 0;
+  width: 125%;
+  position: absolute;
+  top: -130rpx;
+  left: 0rpx;
+  z-index: -1;
+}
+.suit text{
+  position: absolute;
+  right: 15rpx;
+  top: 65rpx;
+  color: #e7e7e9;
+  font-weight: bold;
+}
+.dealer image{
+  margin: 0;
+  width: 125%;
+  position: absolute;
+  top: -130rpx;
+  left: 0rpx;
+  z-index: -1;
+}
+.dealer text{
+  position: absolute;
+  right: 15rpx;
+  top: 65rpx;
+  color: #e7e7e9;
+  font-weight: bold;
+}
+/* 案例套件经销商文字背景 */
+.items2 .textbg{
+  width: 100%;
+  height: 100rpx;
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0),  #000000);
+  position: absolute;
+  bottom: 0;
+}
+
+/* 套件1 */
+.suits{
+  box-sizing: border-box;
+  /* width:  */
+  padding: 30rpx;
+}
+.suits text{
+  color: #31354a;
+}
+.suits>text:first-child{
+  padding-left: 25rpx;
+  border-left: 5rpx solid rgba(215,52,52,0.75);
+}
+.suits>text:nth-child(2){
+  font-size: 20rpx;
+  display: inline-block;
+  padding-top: 10rpx;
+  float: right;
+}
+.suits_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
+.suits_container>.suits_item{
+  width:48%;
+  margin: 20rpx 0;
+  /* border: 1rpx solid #000000; */
+  border-radius: 15rpx;
+  box-shadow: 0 0 5rpx rgba(49, 53, 74, 0.3);
+  overflow: hidden;
+}
+.suits_container>.suits_item>image{
+  display: block;
+  width: 100%;
+  height: 200rpx;
+}
+.suits_item text{
+  display: inline-block;
+  padding: 15rpx;
+}
+.suits_container>.suits_item>text:nth-child(3){
+  float:right;
+}
+
+/* 套件2 */
+.suits2{
+  width: 690rpx;
+  margin: 20rpx auto;
+  display: none;
+}
+.suits2 text{
+  color: #31354a;
+}
+.suits2>text:first-child{
+  padding-left: 25rpx;
+  border-left: 5rpx solid rgba(215,52,52,0.75);
+}
+.suits2>text:nth-child(2){
+  font-size: 20rpx;
+  display: inline-block;
+  padding-top: 10rpx;
+  float: right;
+}
+.suits2>.suits_item{
+  width: 100%;
+  border-radius: 15rpx;
+  box-shadow: 0 0 5rpx rgba(49, 53, 74, 0.3);
+  margin: 20rpx 0;
+  overflow: hidden;
+}
+.suits2>.suits_item image{
+  margin: 0;
+  width: 100%;
+  height: 350rpx;
 }

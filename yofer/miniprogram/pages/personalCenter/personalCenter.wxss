@@ -1,1 +1,104 @@
 /* pages/personalCenter/personalCenter.wxss */
+/* 背景 */
+.background{
+  width: 100%;
+  height: 380rpx;
+  position: relative;
+}
+.background>image:first-child{
+  /* display: none; */
+  margin: 0;
+  width: 100%;
+  height: 380rpx
+}
+.background>image:last-child{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 30rpx;
+  right: 30rpx;
+}
+.background view{
+  width:100%;
+  height: 160rpx;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom, black, rgba(255,255,255,0))
+}
+
+/* 信息 */
+.info{
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 20rpx;
+  padding-left: 170rpx;
+  box-sizing: border-box;
+}
+.info image:first-child{
+  border: 5rpx solid #31354a;
+  border-radius: 50%;
+  width: 150rpx;
+  height: 150rpx;
+  position: absolute;
+  top: -75rpx;
+  left: 0;
+}
+.info text{
+  color: #31354a;
+}
+.info image:last-child{
+  float: right;
+  width: 40rpx;
+  height: 40rpx;
+}
+/* 底下项目 */
+.items{
+  width: 80%;
+  margin: 50rpx auto 0;
+}
+.items>view{
+  box-sizing: border-box;
+  width: 100%;
+  /* line-height: 80rpx; */
+  /* background: #a00; */
+}
+.items>view>text{
+  display: inline-block;
+  margin: 20rpx 0;
+}
+.items>view>text:nth-child(2){
+  float:right;
+  letter-spacing: -10rpx;
+}
+.items>view:first-child>view{
+  width: 100%;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  box-shadow: 0 0 5rpx rgba(49, 53, 74, 0.3);
+  overflow: hidden;
+}
+.items image{
+  display: block;
+  width: 100%;
+  height: 304rpx;
+}
+.items>view>view>text{
+  display: inline-block;
+  margin: 20rpx 30rpx;
+}
+.items>view:last-child{
+  width: 100%;
+}
+.items>view:last-child>view{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.items>view:last-child image{
+  width: 48%;
+  height: 150rpx;
+  border-radius: 15rpx;
+  margin-bottom: 24rpx;
+}
